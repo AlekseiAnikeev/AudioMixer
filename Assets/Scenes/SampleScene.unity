@@ -478,18 +478,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300835281}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1124347885}
   - {fileID: 1671251880}
-  m_Father: {fileID: 1637407781}
+  m_Father: {fileID: 897969315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -194.99997, y: 88}
+  m_AnchoredPosition: {x: 265, y: -369.40482}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &300835283
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1637407784}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Volume, Assembly-CSharp
         m_MethodName: ChangeMasterVolume
         m_Mode: 0
@@ -1006,18 +1006,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526221053}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2110014951}
   - {fileID: 1953338548}
-  m_Father: {fileID: 1637407781}
+  m_Father: {fileID: 897969315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.000030517578, y: 88}
+  m_AnchoredPosition: {x: 0.000030517578, y: -369.40482}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526221055
@@ -1237,7 +1237,7 @@ GameObject:
   - component: {fileID: 652767713}
   - component: {fileID: 652767712}
   m_Layer: 5
-  m_Name: VolumeSlider
+  m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1416,6 +1416,7 @@ GameObject:
   - component: {fileID: 792632326}
   - component: {fileID: 792632328}
   - component: {fileID: 792632327}
+  - component: {fileID: 792632329}
   m_Layer: 5
   m_Name: BackgroundVolum
   m_TagString: Untagged
@@ -1541,6 +1542,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792632325}
   m_CullTransparentMesh: 1
+--- !u!114 &792632329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792632325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f1ae76ce476894599088be46d67997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: 0}
+  _volumeType: 1
+  _slider: {fileID: 2024557012}
+--- !u!1 &897969314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897969315}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &897969315
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897969314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1209886163}
+  - {fileID: 976960793}
+  - {fileID: 526221054}
+  - {fileID: 300835282}
+  m_Father: {fileID: 1637407781}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &957183667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,6 +1607,7 @@ GameObject:
   - component: {fileID: 957183668}
   - component: {fileID: 957183670}
   - component: {fileID: 957183669}
+  - component: {fileID: 957183671}
   m_Layer: 5
   m_Name: MasterVolum
   m_TagString: Untagged
@@ -1676,6 +1732,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957183667}
   m_CullTransparentMesh: 1
+--- !u!114 &957183671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957183667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f1ae76ce476894599088be46d67997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: 0}
+  _volumeType: 0
+  _slider: {fileID: 328623607}
 --- !u!1 &976960792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,18 +1773,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976960792}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1703915323}
   - {fileID: 2103403567}
-  m_Father: {fileID: 1637407781}
+  m_Father: {fileID: 897969315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 195, y: 88}
+  m_AnchoredPosition: {x: -264.99997, y: -369.40482}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &976960794
@@ -1900,7 +1971,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1637407784}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Volume, Assembly-CSharp
         m_MethodName: ChangeEffectsVolume
         m_Mode: 0
@@ -2169,6 +2240,7 @@ GameObject:
   - component: {fileID: 1209886166}
   - component: {fileID: 1209886165}
   - component: {fileID: 1209886164}
+  - component: {fileID: 1209886167}
   m_Layer: 5
   m_Name: MuteButton
   m_TagString: Untagged
@@ -2183,17 +2255,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209886162}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1323632181}
-  m_Father: {fileID: 1637407781}
+  m_Father: {fileID: 897969315}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -203, y: -83.46982}
+  m_AnchoredPosition: {x: 257, y: 373.935}
   m_SizeDelta: {x: 300, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209886164
@@ -2239,19 +2311,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1209886165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1637407784}
-        m_TargetAssemblyTypeName: Volume, Assembly-CSharp
-        m_MethodName: MuteVolume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1209886165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2290,6 +2350,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209886162}
   m_CullTransparentMesh: 1
+--- !u!114 &1209886167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209886162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d89b590ed123840a7c105dbea7fc9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _muteButton: {fileID: 1209886164}
 --- !u!1 &1268533106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2510,6 +2583,7 @@ GameObject:
   - component: {fileID: 1585954756}
   - component: {fileID: 1585954758}
   - component: {fileID: 1585954757}
+  - component: {fileID: 1585954759}
   m_Layer: 5
   m_Name: ButtonVolum
   m_TagString: Untagged
@@ -2634,6 +2708,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585954755}
   m_CullTransparentMesh: 1
+--- !u!114 &1585954759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585954755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4f1ae76ce476894599088be46d67997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mixer: {fileID: 0}
+  _volumeType: 2
+  _slider: {fileID: 1002629180}
 --- !u!1 &1637407780
 GameObject:
   m_ObjectHideFlags: 0
@@ -2645,7 +2734,7 @@ GameObject:
   - component: {fileID: 1637407781}
   - component: {fileID: 1637407783}
   - component: {fileID: 1637407782}
-  - component: {fileID: 1637407784}
+  - component: {fileID: 1637407785}
   m_Layer: 5
   m_Name: VolumeOption
   m_TagString: Untagged
@@ -2665,11 +2754,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1209886163}
-  - {fileID: 976960793}
-  - {fileID: 526221054}
-  - {fileID: 300835282}
   - {fileID: 652767711}
+  - {fileID: 897969315}
   m_Father: {fileID: 788171770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2715,7 +2801,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637407780}
   m_CullTransparentMesh: 1
---- !u!114 &1637407784
+--- !u!114 &1637407785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2724,14 +2810,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1637407780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7d89b590ed123840a7c105dbea7fc9f, type: 3}
+  m_Script: {fileID: 11500000, guid: 44bedab69545e514082b3e9741d0ffea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _mixer: {fileID: 24300002, guid: 5769b151bf5c50945b34c50717096aa9, type: 2}
-  _sliders:
-  - {fileID: 328623607}
-  - {fileID: 1002629180}
-  - {fileID: 2024557012}
+  _slider:
+  - {fileID: 957183671}
+  - {fileID: 1585954759}
+  - {fileID: 792632329}
+  _muteButton: {fileID: 1209886167}
 --- !u!1 &1671251879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,7 +3493,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1637407784}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Volume, Assembly-CSharp
         m_MethodName: ChangeMusicVolume
         m_Mode: 0
